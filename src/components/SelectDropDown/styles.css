@@ -1,0 +1,21 @@
+.drop-down {
+	width: 200px;
+	position: relative;
+}
+
+.drop-down_options {
+	background: #FFF;
+	border: 1px solid #000;
+	cursor: pointer;
+	list-style-type: none;
+	padding: 0;
+	position: absolute;
+	margin: 0;
+	width: 200px;
+	padding: 3px;
+}
+
+.drop-down_options .active {
+	background: #CCC;
+	font-weight: bold;
+}

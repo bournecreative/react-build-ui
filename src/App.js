@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { SelectDropDown } from './components/SelectDropDown/index.js'
+
+const options = [
+	{
+		id: 1,
+		label: 'green',
+		value: 'green'
+	},
+	{
+		id: 2,
+		label: 'blue',
+		value: 'blue'
+	},
+	{
+		id: 3,
+		label: 'cyan',
+		value: 'cyan'
+	}
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<SelectDropDown options={options} />
+		</div>
+	)
 }
 
-export default App;
+export default App
