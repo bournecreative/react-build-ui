@@ -1,4 +1,4 @@
-import { SelectDropDown } from './components/SelectDropDown/index.js'
+import { DropDownSelect } from './components/DropDownSelect/index.js'
 
 const options = [
 	{
@@ -21,7 +21,7 @@ const options = [
 function App() {
 	return (
 		<div className="App">
-			<SelectDropDown options={options} />
+			<DropDownSelect options={options} />
 		</div>
 	)
 }
